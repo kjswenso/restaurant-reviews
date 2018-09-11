@@ -50,6 +50,7 @@
 		max-width: 100%;
 		margin: 5px auto;
 		padding: 5px;
+		position: static;
 	}
 
 	#restaurants-list .restaurant-img {
@@ -60,9 +61,85 @@
 
 /* ----- Restaurant Info Responsive Styles ----- */
 
-@media screen and (max-width: 700px) {
-	#restaurant-name {
-		background-color: purple;
+@media screen and (min-width: 0px) {
+	.inside {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.inside #map-container {
+		width: 100%;
+		max-height: 350px;
+		margin-top: 50px;
+	}
+
+	#breadcrumb {
+		width: 100%;
+	}
+
+	.inside #footer {
+		width: 100%;
+	}
+
+	#restaurant-container, #reviews-container {
+		width: 85%;
+		padding: auto;
+		position: static;
+	}
+
+	#restaurant-container {
+		margin-top: 350px;
+	}
+
+	#reviews-list li {
+		position: static;
 	}
 
 } 
+
+@media screen and (max-width: 195px) {
+	.inside #map-container {
+		margin-top: 75px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	#restaurant-img {
+		max-width: 100%;
+		min-height: auto;
+	}
+
+	#restaurant-container {
+		width: 100%;
+		padding: 0px 5px; 
+		margin-top: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#restaurant-hours td {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#reviews-container {
+		width: 100%;
+		padding: 0px 5px;
+		margin: 0px auto;
+	}
+
+	#reviews-list li {
+		padding: 10px;
+	}
+
+	.inside nav h1 a {
+		font-size: .75em;
+		margin: 0px auto;
+	}
+
+	.inside #footer{
+		width: 100%;
+		padding: 5px;
+	}
+}
