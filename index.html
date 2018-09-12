@@ -14,21 +14,21 @@
 <body>
   <header>
     <nav>
-      <h1><a href="/" title="Go To Home Page">Restaurant Reviews</a></h1>
+      <h1><a href="/" tabindex="1" title="Home Page">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
   <main id="maincontent">
-    <section id="map-container" role="map" aria-label="restaurant location">
+    <section id="map-container" role="application" aria-label="restaurant location">
       <div id="map"></div>
     </section>
     <section id="restaurant-choices">
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" aria-label="neighborhood selection" onchange="updateRestaurants()">
+        <select id="neighborhoods-select" name="neighborhoods" aria-label="neighborhood selection" tabindex="2" onchange="updateRestaurants()">
           <option value="all" >All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" aria-label="cuisines selection"  onchange="updateRestaurants()">
+        <select id="cuisines-select" name="cuisines" aria-label="cuisines selection" tabindex="2" onchange="updateRestaurants()">
           <option value="all" >All Cuisines</option>
         </select>
       </div>
@@ -42,7 +42,7 @@
 
 
   <footer id="footer">
-    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    Copyright (c) 2017 <a href="/" title="Restaurant Reviews Home Page"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
 
 </body>
