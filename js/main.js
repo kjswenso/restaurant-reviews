@@ -212,3 +212,12 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 } */
 
+
+//followed https://developers.google.com/web/fundamentals/primers/service-workers/registration
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').catch(function(err) {
+     console.error(err);
+    });
+  });
+}
