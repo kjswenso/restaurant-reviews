@@ -20,5 +20,8 @@ This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://w
 
 You may need to replace the Mapbox API key with your own token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information. 
 
+### Credits
 
-
+* https://matthewcranford.com/restaurant-reviews-app-walkthrough-part-4-service-workers/used to help with cloned response within the service worker
+* https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker used to register the service worker
+* Used code from the Udacity Service Worker lessons 16, 17, 18, 19
