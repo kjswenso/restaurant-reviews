@@ -1,0 +1,153 @@
+/* ------- Main Page Responsive Styles ----- */
+
+@media screen and (max-width: 443px) {
+	.filter-options { 
+		width: 100%;
+		height: auto;
+		padding-top: 2%;
+	}
+
+	.filter-options select {
+		max-width: 100%;
+		margin-right: 10px;
+	}
+
+	#restaurants-list li {
+		width:90%;
+		margin: 5px auto;
+		padding: 10px 2px;
+	}
+
+	#restaurants-list .restaurant-img {
+		max-width: 100%;
+		min-height: auto;
+	}
+}
+
+@media screen and (min-width: 444px) {
+	.filter-options {
+		width: 100%;
+		height: auto;
+		padding-top: 2%;
+	}
+}
+
+@media screen and (min-width: 444px) and (max-width: 614px) {
+	#restaurants-list li {
+		min-width: 390px;
+		margin: 0px auto;
+		padding: 10px 2px;
+	}
+}
+
+@media screen and (min-width: 615px) {
+	#restaurants-list {
+		display: inline-flex;
+		flex-wrap: wrap;
+	}
+
+	#restaurants-list li {
+		max-width: 100%;
+		margin: 5px auto;
+		padding: 5px;
+		position: static;
+	}
+
+	#restaurants-list .restaurant-img {
+		max-width: 100%;
+		min-height: auto;
+	}
+}
+
+/* ----- Restaurant Info Responsive Styles ----- */
+
+@media screen and (min-width: 0px) {
+	.inside {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.inside #map-container {
+		width: 100%;
+		max-height: 350px;
+		position: relative;
+	}
+
+	#breadcrumb {
+		width: 100%;
+	}
+
+	.inside #footer {
+		width: 100%;
+		position: static;
+		margin-top: 250px;
+	}
+
+	#restaurant-container, #reviews-container {
+		width: 85%;
+		padding: auto;
+		position: static;
+	}
+
+	#restaurant-img {
+		max-width: 500px;
+		min-height: auto;
+	}
+
+	#restaurant-cuisine {
+		max-width: 500px;
+	}
+
+	#reviews-list li {
+		position: static;
+	}
+
+} 
+
+@media screen and (max-width: 195px) {
+	.inside #map-container {
+		max-height: 200px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	#restaurant-img {
+		max-width: 100%;
+		min-height: auto;
+	}
+
+	#restaurant-container {
+		width: 100%;
+		padding: 0px 5px; 
+		margin-top: 75px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#restaurant-hours td {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#reviews-container {
+		width: 100%;
+		padding: 0px 5px;
+		margin: 0px auto;
+	}
+
+	#reviews-list li {
+		padding: 10px;
+	}
+
+	.inside nav h1 a {
+		font-size: .75em;
+		margin: 0px auto;
+	}
+
+	.inside #footer{
+		width: 100%;
+		padding: 5px;
+		margin-top: 325px;
+	}
+}
